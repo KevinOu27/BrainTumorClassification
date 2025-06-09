@@ -194,8 +194,8 @@ def diagnose_with_knowledge(image_path, model, class_map, api_key):
 
 #Example
 class_map = {v: k for k, v in test_generator.class_indices.items()}
-image_path = "/Users/kevinou/Desktop/Grad/Projects/MSDS458Final/Testing/glioma/Te-gl_0010.jpg"
-api_key = "AIzaSyBOt8LjuMBiriNHu6y9KSu-Kte8IUAqpKg"
+image_path = "/Users/kevinou/Desktop/Grad/Projects/BrainTumorClassification/Testing/glioma/Te-gl_0010.jpg"
+api_key = ""
 tumor_type, related_symptoms = diagnose_with_knowledge(image_path, model, class_map, api_key)
 print(f"Predicted Tumor Type: {tumor_type}")
 print(f"Related Symptoms: {related_symptoms}")
